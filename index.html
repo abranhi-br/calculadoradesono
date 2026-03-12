@@ -504,8 +504,11 @@
 
         calculate() {
           this.screen = 'result';
-          window.scrollTo({ top: 0, behavior: 'smooth' });
-          this.$nextTick(() => this.animateResult());
+          this.$nextTick(() => {
+            document.documentElement.scrollTop = 0;
+            document.body.scrollTop = 0;
+            this.animateResult();
+          });
         },
 
         animateResult() {
