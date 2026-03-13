@@ -15,9 +15,9 @@
       --surface:   #deeef8;
       --card:      #eaf4fc;
       --border:    rgba(55,105,175,.14);
-      --muted:     rgba(18,52,108,.44);
-      --text:      #1b3463;
-      --bright:    #0d1e3e;
+      --muted:     rgba(0,0,0,.45);
+      --text:      #000000;
+      --bright:    #000000;
       --gold:      #b87600;
       --gold-bg:   rgba(184,118,0,.1);
       --gold-glow: rgba(184,118,0,.22);
@@ -80,7 +80,7 @@
     .page-sub {
       font-family: 'Cormorant Garamond', serif;
       font-weight: 300; font-size: clamp(.95rem, 3vw, 1.2rem);
-      color: var(--lav); letter-spacing: .06em; margin-bottom: 1.4rem;
+      color: #000; letter-spacing: .06em; margin-bottom: 1.4rem;
     }
 
     .page-desc {
@@ -158,7 +158,7 @@
       transition: background .25s, border-color .25s, color .25s;
     }
     .q-row.answered .q-num-badge {
-      background: var(--lav-bg); border-color: rgba(68,48,190,.35); color: var(--lav);
+      background: var(--lav-bg); border-color: rgba(68,48,190,.35); color: #000;
     }
 
     .q-row-text { flex: 1; }
@@ -268,7 +268,7 @@
     .bd-q { font-size: .81rem; color: var(--muted); flex: 1; line-height: 1.4; }
     .bd-s { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; color: var(--bright); width: 22px; text-align: right; flex-shrink: 0; }
 
-    .disclaimer { font-size: .7rem; color: rgba(18,52,108,.32); line-height: 1.65; margin-top: 2rem; }
+    .disclaimer { font-size: .7rem; color: rgba(0,0,0,.4); line-height: 1.65; margin-top: 2rem; }
 
     /* ─── Utilities ─── */
     [x-cloak] { display: none !important; }
